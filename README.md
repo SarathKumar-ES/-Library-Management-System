@@ -1,19 +1,21 @@
 # 📚 Library Management System (MySQL)
 
-A complete database solution for tracking library operations with 6 normalized tables and 15+ analytical queries.
+A robust database solution for tracking library operations, including book inventory, customer transactions, and employee management.
 
-## 🛠️ Technologies
+## 🛠️ Technologies Used
 - **Database**: MySQL
-- **Design**: Relational database with PK/FK constraints
-- **Tools**: MySQL Workbench, [QuickDBD](https://www.quickdatabasediagrams.com/) (for schema design)
+- **Key Features**:
+  - 6 normalized tables with relationships (Branch, Employee, Books, Customer, IssueStatus, ReturnStatus)
+  - 15+ optimized SQL queries for business insights
+  - Data validation through constraints (Primary/Foreign Keys, CHECK)
+  - Transaction tracking (book issues/returns)
 
-## 🗄️ Database Schema
-[![Schema Diagram](https://i.ibb.co/4W4LqyX/library-schema.png)](https://ibb.co/4W4LqyX)  
-*(Click to enlarge)*
-
-**Tables**:
-- `Branch` (Branch details)
-- `Employee` (Staff management)
-- `Books` (Inventory tracking)
-- `Customer` (Patron records)
-- `IssueStatus`/`ReturnStatus` (Transaction logs)
+## 📋 Table Structure
+| Table          | Key Columns                          | Purpose                     |
+|----------------|--------------------------------------|-----------------------------|
+| `Branch`       | `Branch_no`, `Manager_Id`            | Library locations           |
+| `Employee`     | `Emp_Id`, `Position`, `Salary`       | Staff management            |
+| `Books`        | `ISBN`, `Category`, `Rental_Price`   | Inventory tracking          |
+| `Customer`     | `Customer_Id`, `Reg_Date`            | Patron records              |
+| `IssueStatus`  | `Issue_ID`, `Issued_Cust`            | Book checkout tracking      |
+| `ReturnStatus` | `Return_Id`, `Return_date`           | Book return tracking        |
