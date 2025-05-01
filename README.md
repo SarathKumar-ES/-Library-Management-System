@@ -1,14 +1,19 @@
-A comprehensive database solution for tracking library operations including book inventory, customer transactions, and branch management.
+# 📚 Library Management System (MySQL)
 
-## 🛠️ Technologies Used
+A complete database solution for tracking library operations with 6 normalized tables and 15+ analytical queries.
+
+## 🛠️ Technologies
 - **Database**: MySQL
-- **Key Features**:
-  - Normalized relational database design
-  - CRUD operations for books, customers, and employees
-  - Transaction tracking (issue/return)
-  - Advanced queries for business insights
+- **Design**: Relational database with PK/FK constraints
+- **Tools**: MySQL Workbench, [QuickDBD](https://www.quickdatabasediagrams.com/) (for schema design)
 
-## 📊 Database Schema
-![Schema Diagram](https://i.imgur.com/JQp8B4E.png) *(Example diagram - create yours with [DBDiagram.io](https://dbdiagram.io/))*
-- **6 Tables**: `Branch`, `Employee`, `Books`, `Customer`, `IssueStatus`, `ReturnStatus`
-- **15+ Optimized Queries**: Including joins, aggregations, and subqueries
+## 🗄️ Database Schema
+[![Schema Diagram](https://i.ibb.co/4W4LqyX/library-schema.png)](https://ibb.co/4W4LqyX)  
+*(Click to enlarge)*
+
+**Tables**:
+- `Branch` (Branch details)
+- `Employee` (Staff management)
+- `Books` (Inventory tracking)
+- `Customer` (Patron records)
+- `IssueStatus`/`ReturnStatus` (Transaction logs)
